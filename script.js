@@ -454,12 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const phone = leadPhone.value.trim();
             const region = leadRegion.value;
 
-            const whatsappMessage = `Olá Dra. Luana! Gostaria de agendar uma avaliação de transplante capilar na Clínica Anauá.\n\n` +
-                `📋 *Dados da Solicitação:*\n` +
-                `👤 *Nome:* ${name}\n` +
-                `📧 *E-mail:* ${email}\n` +
-                `📱 *WhatsApp:* ${phone}\n` +
-                `📍 *Região:* ${region}`;
+            const whatsappMessage = `Oi, Dra. Luana, eu me chamo ${name} e gostaria de fazer uma avaliação na sua clínica.`;
 
             const encodedMessage = encodeURIComponent(whatsappMessage);
             const whatsappUrl = `https://api.whatsapp.com/send?phone=5592992146771&text=${encodedMessage}`;
